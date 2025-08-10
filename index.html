@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pavan — Frontend Developer & Content Creator</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- HEADER / NAV -->
+    <header class="header" id="header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="nav__brand" href="#home">PAVAN</a>
+
+        <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+          <i class='bx bx-menu'></i>
+        </button>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link active" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#work">Projects</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="home" class="home section container">
+        <div class="home__left">
+          <h1 class="home__title">
+            Hi, I'm <span class="accent">PAVAN</span><br>
+            Frontend Developer & Content Creator
+          </h1>
+          <p class="muted">Self-motivated Computer Engineering student — learning MERN, building projects, creating content.</p>
+          <div class="home__actions">
+            <a href="#contact" class="btn">Contact</a>
+            <a href="#work" class="btn btn--light">Projects</a>
+          </div>
+
+          <div class="home__social">
+            <a href="#" aria-label="LinkedIn" class="icon"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#" aria-label="Github" class="icon"><i class='bx bxl-github' ></i></a>
+          </div>
+        </div>
+
+        <div class="home__right">
+          <!-- Decorative blob with image -->
+          <svg class="blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <mask id="m1" mask-type="alpha">
+              <path d="M9.19 145.96C34.02 76.58 114.86 54.73 184.11 29.48C245.80 6.99 311.86 -14.95 370.74 14.14C431.21 44.03 467.95 107.51 477.19 174.31C485.90 237.23 454.93 294.38 416.51 344.95C373.74 401.25 326.07 462.80 255.44 466.19C179.42 469.84 111.55 422.14 65.16 361.81C17.48 299.81 -17.16 219.58 9.19 145.96Z"/>
+            </mask>
+
+              <image x="35" y="35" width="410" height="410" preserveAspectRatio="xMidYMid slice" href="pavan.jpg" alt="Pavan photo"/>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about section container">
+        <h2 class="section-title">About</h2>
+        <div class="about__grid">
+          <div class="about__img">
+            <img src="pavan.jpg" alt="Pavan portrait">
+          </div>
+          <div class="about__content">
+            <h3>I’m Pavan</h3>
+            <p>Frontend developer focused on modern HTML, CSS and JavaScript. Learning MERN stack. I create small web apps and motivational content to help students and aspirants.</p>
+            <ul class="about__list">
+              <li>Self-motivated & disciplined</li>
+              <li>Good communication & storytelling</li>
+              <li>Currently focusing on React, Node & projects</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="skills section container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills__grid">
+          <div class="skills__col">
+            <h3 class="skills__subtitle">Technical</h3>
+
+            <!-- each skill has data-percent attribute used by JS to animate -->
+            <div class="skill" data-percent="95">
+              <div class="skill__meta">
+                <div><i class='bx bxl-html5'></i> HTML5</div>
+                <div class="skill__pct">95%</div>
+              </div>
+              <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+
+            <div class="skill" data-percent="85">
+              <div class="skill__meta">
+                <div><i class='bx bxl-css3'></i> CSS3</div>
+                <div class="skill__pct">85%</div>
+              </div>
+              <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+
+            <div class="skill" data-percent="80">
+              <div class="skill__meta">
+                <div><i class='bx bxl-javascript'></i> JavaScript</div>
+                <div class="skill__pct">80%</div>
+              </div>
+              <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+
+            <div class="skill" data-percent="45">
+              <div class="skill__meta">
+                <div><i class='bx bxl-angular'></i> Angular</div>
+                <div class="skill__pct">45%</div>
+              </div>
+              <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+          </div>
+
+          <div class="skills__col">
+            <img src="work3.jpg" alt="work sample" class="skills__image">
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK / PROJECTS -->
+      <section id="work" class="work section container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects__grid">
+          <article class="project">
+            <h4>FinFamPro (Finmate) [YET TO BE START]</h4>
+            <p>AI-powered expense prediction & tracking. Built with React + Node.</p>
+            <div class="project__tags">
+              <span>React</span> <span>Node</span> <span>AI</span>
+            </div>
+            <a class="project__link" href="#" target="_blank" rel="noopener">View repo</a>
+          </article>
+
+          <article class="project">
+            <h4>Tic-Tac-Toe</h4>
+            <p>Classic Tic-Tac-Toe built with Vanilla JS. Good for learning DOM & game logic.</p>
+            <div class="project__tags">
+              <span>Vanilla JS</span> <span>HTML/CSS</span>
+            </div>
+            <a class="project__link" href="#" target="_blank" rel="noopener">Play demo</a>
+          </article>
+
+           <article class="project">
+            <h4>Personal Portfolio Website</h4>
+            <p>Designed and developed a fully responsive personal portfolio website using HTML, CSS, and JavaScript to showcase skills, projects, and contact details</p>
+            <div class="project__tags">
+              <span>Vanilla JS</span> <span>HTML/CSS</span>
+            </div>
+            <a class="project__link" href="#" target="_blank" rel="noopener">Play demo</a>
+          </article>
+
+          <!-- add more project cards as needed -->
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact section container">
+        <h2 class="section-title">Contact</h2>
+        <form id="contact-form" class="contact__form" novalidate>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+          <input id="email" name="email" type="email" placeholder="Email address" required>
+          <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+          <div class="contact__actions">
+            <button type="submit" class="btn">Submit</button>
+            <div id="form-msg" class="form-msg" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <p class="footer__brand">Pavan</p>
+          <p class="muted small">© 2025 Pavan Shirsath — Building code & stories for the future</p>
+        </div>
+
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+          <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+          <a href="#" aria-label="Github"><i class='bx bxl-github'></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
